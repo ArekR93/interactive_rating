@@ -29,6 +29,9 @@ body {
   max-width: 400px;
   padding: 1em 2em;
 }
+.wrapper .rating-state {
+  display: none;
+}
 .wrapper .rating-state .star-box {
   margin-top: 1em;
   width: 40px;
@@ -61,13 +64,49 @@ body {
   background-color: hsl(213, 19%, 25%);
   border: none;
   color: hsl(217, 12%, 63%);
+  transition: 0.5s;
+}
+.wrapper .rating-state .button-box .btn-choice.taken {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(216, 12%, 8%);
 }
 .wrapper .rating-state .submit-btn {
   padding: 1em 2em;
   border-radius: 20px;
   border: none;
   background-color: hsl(25, 97%, 53%);
+  transition: background-color 0.5s;
+}
+.wrapper .rating-state .submit-btn:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+.wrapper .rating-state .btn-choice:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(216, 12%, 8%);
 }
 .wrapper .thank-you {
   display: none;
+  align-items: center;
+}
+.wrapper .thank-you .thank-you-box {
+  margin-top: 1em;
+}
+.wrapper .thank-you .notice {
+  padding: 0.5em 1em;
+  background-color: hsl(213, 19%, 25%);
+  border-radius: 50px;
+  color: hsl(25, 97%, 53%);
+  margin: 1em 0;
+}
+.wrapper .thank-you .box-title {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1.5em;
+}
+.wrapper .thank-you .description {
+  color: hsl(217, 12%, 63%);
+  text-align: center;
+  font-size: 1.2;
+}
+.wrapper .active {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */

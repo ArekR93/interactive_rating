@@ -35,6 +35,7 @@ body{
         padding: 1em 2em;
     }
     .rating-state{
+        display: none;
         .star-box{
             margin-top: 1em;
             width: 40px;
@@ -67,6 +68,11 @@ body{
                 background-color: hsl(213, 19%, 25%);
                 border: none;
                 color: $lightGrey;
+                transition: .5s;
+            }
+            .btn-choice.taken{
+                background-color: $white;
+                color: $veryDarkBlue;
             }
         }
         .submit-btn{
@@ -74,18 +80,40 @@ body{
             border-radius: 20px;
             border: none;
             background-color: $orange;
+            transition: background-color .5s;
+        }
+        .submit-btn:hover{
+            background-color: $white;
+        }
+        .btn-choice:hover{
+            background-color:$orange;
+            color: $veryDarkBlue;
         }
     }
-
-
-
-
-
-
-
-
-
     .thank-you{
         display: none;
+        align-items: center;
+        .thank-you-box{
+            margin-top: 1em;
+        }
+        .notice{
+            padding: .5em 1em;
+            background-color: hsl(213, 19%, 25%);
+            border-radius: 50px;
+            color: $orange;
+            margin: 1em 0;
+        }
+        .box-title{
+            color:$white;
+            margin-bottom: 1.5em;
+        }
+        .description{
+            color:$lightGrey;
+            text-align: center;
+            font-size: 1.2;
+        }
+    }
+    .active{
+        display: flex;
     }
 }
